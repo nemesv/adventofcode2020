@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Solutions": {
+      "commandName": "Project",
+      "commandLineArgs": "1"
+    }
+  }
+}
