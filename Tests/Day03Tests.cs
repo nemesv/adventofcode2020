@@ -6,14 +6,34 @@ namespace Tests
 {
     public class Day03Tests : DayTest<Day03>
     {
-        [Input(@"input", "expected")]
+        [Input(@"..##.......
+#...#...#..
+.#....#..#.
+..#.#...#.#
+.#...##..#.
+..#.##.....
+.#.#.#....#
+.#........#
+#.##...#...
+#...##....#
+.#..#...#.#", "7")]
         public void Part1(string input, string output)
         {
             var result = Sut(input.Replace(",", "\r\n")).Part1();
             result.ShouldBe(output);
         }
 
-        [Input(@"input", "expected")]
+        [Input(@"..##.......
+#...#...#..
+.#....#..#.
+..#.#...#.#
+.#...##..#.
+..#.##.....
+.#.#.#....#
+.#........#
+#.##...#...
+#...##....#
+.#..#...#.#", "336")]
         public void Part2(string input, string output)
         {
             var result = Sut(input.Replace(",", "\r\n")).Part2();
