@@ -6,17 +6,17 @@ namespace Tests
 {
     public class Day15Tests : DayTest<Day15>
     {
-        [Input(@"input", "expected")]
+        [Input(@"0,3,6", "436")]
         public void Part1(string input, string output)
         {
-            var result = Sut(input.Replace(",", "\r\n")).Part1();
+            var result = Sut(input).Part1();
             result.ShouldBe(output);
         }
 
-        [Input(@"input", "expected")]
+        [Input(@"0,3,6", "175594")]
         public void Part2(string input, string output)
         {
-            var result = Sut(input.Replace(",", "\r\n")).Part2();
+            var result = Sut(input).Part2();
             result.ShouldBe(output);
         }
     }
