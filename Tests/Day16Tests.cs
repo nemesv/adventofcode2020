@@ -6,17 +6,21 @@ namespace Tests
 {
     public class Day16Tests : DayTest<Day16>
     {
-        [Input(@"input", "expected")]
+        [Input(@"class: 1-3 or 5-7
+row: 6-11 or 33-44
+seat: 13-40 or 45-50
+
+your ticket:
+7,1,14
+
+nearby tickets:
+7,3,47
+40,4,50
+55,2,20
+38,6,12", "71")]
         public void Part1(string input, string output)
         {
-            var result = Sut(input.Replace(",", "\r\n")).Part1();
-            result.ShouldBe(output);
-        }
-
-        [Input(@"input", "expected")]
-        public void Part2(string input, string output)
-        {
-            var result = Sut(input.Replace(",", "\r\n")).Part2();
+            var result = Sut(input).Part1();
             result.ShouldBe(output);
         }
     }
